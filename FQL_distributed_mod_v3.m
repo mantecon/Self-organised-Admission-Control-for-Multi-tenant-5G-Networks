@@ -95,7 +95,7 @@ sigma41 = 6;
 sigma42 = 11;
 sigma43 = 6;
     
-%% the main loop of the algorithm
+% the main loop of the algorithm
 
 for k = 1:epoch
 
@@ -232,7 +232,7 @@ for k = 1:epoch
             FUZZY(:,80) = [ST(:,3) ST(:,6) ST(:,9) ST(:,11)];  % HHHM
             FUZZY(:,81) = [ST(:,3) ST(:,6) ST(:,9) ST(:,12)];  % HHHH
             
-            %% End Fuzzy variables %%
+            % End Fuzzy variables
 
             for i=1:81
                 alpha_i(k,i) = FUZZY(1,i)*FUZZY(2,i)*FUZZY(3,i)*FUZZY(4,i);
@@ -242,14 +242,14 @@ for k = 1:epoch
 
             if k~=1
                 state_idx(k) = state_idx_max;
-                % Compute the value of the new state %
+                % Compute the value of the new state
                 for i=1:length(state)
                         V_t(state_idx(k)) = alpha_i(k,i)*max(q1(i,action_idx(k-1))) + V_t(state_idx(k));
                 end
-                % Calculate the error signal %
+                % Calculate the error signal
                 Q_error1(k) = reward(k) + gamma*V_t(state_idx(k))-Q1(state_idx(k-1),action_idx(k-1));
 
-                % Update q-values by an ordinary gradient descent method %
+                % Update q-values by an ordinary gradient descent method
                 q1(state_idx(k),umax(i)) = q1(state_idx(k),umax(i)) + eta*Q_error1(k)*alpha_i(k-1,state_idx(k));
             end    
 
@@ -266,7 +266,7 @@ for k = 1:epoch
                 end
             end
             
-            % Calculate the global action %
+            % Calculate the global action
 
             for i=1:length(state)
                 act(k) = act(k) + alpha_i(k,i)*a_i(i);
@@ -290,9 +290,9 @@ for k = 1:epoch
                 q_values5(i,k) = Q1(i,5);
             end
                                     
-            %% Evolve to the next state %%
+            % Evolve to the next state
 
-            % Observe the reinforcement signal %
+            % Observe the reinforcement signal
 
             delta_T1_C1 = delta_T1_C1 + action(action_idx(k));
             
