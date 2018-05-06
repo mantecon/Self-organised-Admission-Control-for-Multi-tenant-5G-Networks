@@ -123,7 +123,7 @@ for k = 1:epoch
             ST(:,11) = trimf(delta_T2_C1,trimf_1);     % Medium Delta_T2_C1
             ST(:,12) = trapmf(delta_T2_C1,trapmf_2);    % High Delta_T2_C1
 
-            %% Start Fuzzy variables %%
+            % Start Fuzzy variables
             FUZZY(:,1) = [ST(:,1) ST(:,4) ST(:,7) ST(:,10)];  % LLLL
             FUZZY(:,2) = [ST(:,1) ST(:,4) ST(:,7) ST(:,11)];  % LLLM
             FUZZY(:,3) = [ST(:,1) ST(:,4) ST(:,7) ST(:,12)];  % LLLH
