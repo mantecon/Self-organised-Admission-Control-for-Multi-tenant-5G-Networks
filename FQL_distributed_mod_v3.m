@@ -1,7 +1,7 @@
 close all
 clear all
 
-%% Fuzzy Q-Learning %%
+%% Fuzzy Q-Learning %% 
 
 gamma = 0.7;    % discount factor
 eta = 0.5;    % parameter learning factor 
