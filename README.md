@@ -1,5 +1,5 @@
 # Self organised Admission Control for Multi-tenant 5G Networks
-
+[![][license img]][license]
 ## Abstract
 
 The vision of the future 5G corresponds to a highly heterogeneous network at different levels, including multiple Radio Access Technologies (RATs), multiple cell layers, multiple spectrum bands, multiple types of devices and services, etc. Consequently, the overall RAN planning and optimization processes that constitute a key point for the success of the 5G concept will exhibit tremendous complexity.
