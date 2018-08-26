@@ -12,4 +12,4 @@ See the project [here](https://upcommons.upc.edu/handle/2117/114740?locale-attri
 
 ## Full Documentation
 
-See the [Wiki](https://github.com/mantecon/Self-organised-Admission-Control-for-Multi-tenant-5G-Networks/wiki/Self-organised-Admission-Control-for-Multi-tenant-5G-Networks) for full documentation, examples, operational details and other information.
+See the [Wiki](https://github.com/mantecon/Self-organised-Admission-Control-for-Multi-tenant-5G-Networks/wiki/Wiki) for full documentation, examples, operational details and other information.
